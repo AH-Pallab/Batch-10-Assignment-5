@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,19 +9,120 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- Header Part -->
+    <header class="backdrop-blur-3xl fixed w-full top-0">
+      <!-- Navbar Start -->
+      <div
+        class="flex justify-between items-center h-32 px-24 pb-10 text-xl bg-[#F9F7F3] bg-opacity-60"
+      >
+        <div>
+          <a href="./index.html" class="btn font-bold text-xl bg-[#B4F461]">
+            <p class="px-4">Home</p>
+          </a>
+        </div>
+        <div class="flex items-center gap-x-4">
+          <img src="./assets/logo.png" alt="" class="w-12" />
+          <p class="font-bold">Donate Bangladesh</p>
+        </div>
+        <div class="flex gap-x-3">
+          <img src="./assets/coin.png" alt="" />
+          <p class="font-bold">5500 BDT</p>
+        </div>
+      </div>
+      <!-- Navbar End -->
+    </header>
+    <main class="mt-60 max-w-[1140px] mx-auto">
+      <!-- QnA -->
+      <h1 class="mb-8 font-extrabold text-2xl">
+        Important FAQ <i class="fa-solid fa-circle-question pl-2"></i>
+      </h1>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is The Document Object Model(DOM)?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents the structure of a webpage as a tree of
+            objects, allowing scripts and programs to manipulate the content,
+            structure, and style of a document. Each element, attribute, and
+            text in the HTML is represented as a node in the DOM, enabling
+            dynamic changes to the webpage using languages like JavaScript.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element from the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            You can select an element from the DOM using various methods in
+            JavaScript, including: By ID using getElementById. By class name
+            using getElementsByClassName. By tag name using
+            getElementsByTagName. Using querySelector for selecting a single
+            element with a specific selector. Using querySelectorAll for
+            selecting multiple elements that match a specific selector.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What is the event delegation in the contex of the DOM, why is it
+          useful?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a technique that involves attaching a single
+            event listener to a parent element instead of individual listeners
+            for each child element. This parent listener can manage events that
+            bubble up from child elements. It is useful because it improves
+            performance by reducing the number of event listeners, automatically
+            accommodates dynamically added child elements, and simplifies the
+            code by centralizing event handling.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do you manipuilate an element's attributes and styles using the
+          DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            You can manipulate an element's attributes and styles in the DOM
+            using the following methods: Manipulating Attributes Get an
+            Attribute: Retrieve the value of an attribute using methods like
+            getAttribute. Set an Attribute: Modify an attribute's value using
+            methods like setAttribute. Remove an Attribute: Delete an attribute
+            from an element using removeAttribute. Data Attributes: Use the
+            dataset property to access custom data attributes directly.
+            Manipulating Styles Inline Styles: Change an element's styles
+            directly through the style property, where you can set individual
+            CSS properties. Remove Styles: Use methods to remove specific inline
+            styles. CSS Classes: Modify the element's classes using classList to
+            add, remove, or toggle CSS classes, which can apply multiple styles
+            at once. These methods enable dynamic changes to the attributes and
+            styles of DOM elements.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
