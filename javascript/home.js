@@ -4,7 +4,7 @@ document
     donateMoney(
       "noakhali-input",
       "noakhali-balance",
-      "Taka is Donated for Flood Relief in Noakhali,Bangladesh"
+      "Taka is Donated for Flood Relief in Noakhali, Bangladesh"
     );
   });
 document.getElementById("feni-donate").addEventListener("click", function () {
